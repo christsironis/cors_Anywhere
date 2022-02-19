@@ -8,7 +8,8 @@ import cors_proxy from 'cors-anywhere';
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
     // requireHeader: [ 'x-requested-with'],
-    removeHeaders: ['origin']
+    removeHeaders: ['origin'],
+    setHeaders :{"x-powered-by": "CORS Anywhere","Origin": "https://vod.antenna.gr/#/"}
 }).listen(port, host, function() {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
