@@ -2,7 +2,7 @@
 var host = process.env.HOST || '0.0.0.0';
 // Listen on a specific port via the PORT environment variable
 var port = process.env.PORT || 3000;
-import fetch from  'node-fetch';
+
 import cors_proxy from 'cors-anywhere';
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
