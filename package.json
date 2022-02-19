@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors-anywhere": "^0.4.4"
+    "cors-anywhere": "^0.4.4",
+    "node-fetch": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "type": "module"
 }
